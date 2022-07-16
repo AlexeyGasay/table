@@ -48,8 +48,11 @@ export const tableDataSlice = createSlice({
       state.currentPage = action.payload;
     },
     setFilter: (state, action) => {
-      state.filter = action.payload;
-      state.value = "";
+      if (action.payload != "name") {
+        state.type = "equal";
+        state.filter = action.payload;
+        state.value = "";
+      }
     },
     setSortType: (state, action) => {
       state.type = action.payload;

@@ -20,3 +20,16 @@
   outline: none;
   border: 1px solid rgb(109, 104, 104);
 }
+
+@media screen and (max-width: 450px)
+{
+  .handlers
+  {
+    flex-direction: column-reverse;
+
+    select
+    {
+      margin: 5px 0;
+    }
+  }
+}

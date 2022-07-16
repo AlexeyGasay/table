@@ -16,8 +16,8 @@ class controllersTable {
 
 
       else if (!value) {
-        let arrayItem = await db.query(`SELECT * FROM kanalTable OFFSET ${limit * page} LIMIT ${limit};`)
-        let allItem = await db.query(`SELECT * FROM kanalTable;`)
+        let arrayItem = await db.query(`SELECT * FROM welbexTable OFFSET ${limit * page} LIMIT ${limit};`)
+        let allItem = await db.query(`SELECT * FROM welbexTable;`)
         let count = allItem.rowCount;
         let response = arrayItem.rows;
         // console.log(response);

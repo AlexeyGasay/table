@@ -63,6 +63,7 @@ const Handlers = () => {
         :
         <input type="number"
           className={s.search_input}
+          min={0}
           placeholder="Значение"
           value={value}
           onChange={(e) => {
